@@ -143,3 +143,13 @@ Upon completing training, a standard ply file named after the dataset (e.g. **`<
 * **Fix**:
   * Increase the `--data_factor` argument (e.g., from `4` to `8` or `16`) to decrease image resolution.
   * Reduce `--render_width` and `--render_height` resolutions to scale down the rasterization workload.
+
+---
+
+## Roadmap / TODO
+
+- [x] **Generic CLI & Dataset Support**: Expose `--data_dir` to load custom datasets dynamically, and export dynamically-named PLY files matching the scene directory.
+- [x] **UMA Memory Footprint Optimization**: Store dataset images as compact `uint8` arrays on host memory, utilize dynamic pixel chunking, and proactively flush the Metal cache.
+- [ ] **Custom Metal (MSL) Rasterizer Kernel**: Port the forward and backward projection/alpha-blending logic to custom Metal compute shaders (MSL) to achieve sub-10ms iteration speeds.
+- [ ] **Interactive Real-Time Viewer**: Build a lightweight, MacBook-native 3D Gaussian visualizer utilizing MLX and Metal APIs for real-time training monitoring.
+- [ ] **Adaptive Chunk Auto-Tuning**: Implement automated chunk sizing algorithms that dynamically adjust based on active parameters and real-time GPU VRAM headroom.
