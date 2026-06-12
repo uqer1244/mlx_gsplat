@@ -1,0 +1,55 @@
+# macOS System Files
+.DS_Store
+
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python Bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Python distribution and packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Compiled C++ Extensions (.so binaries)
+*.so
+build_ext/
+
+# IDE configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project specific datasets (Large COLMAP data)
+data/
+**/data/
+
+# Generated 3DGS Export Outputs (PLY files)
+*.ply
+*_3dgs.ply
+
+# Performance & training logs
+*.log
+instrumentation.log

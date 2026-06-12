@@ -1,0 +1,20 @@
+# Core MLX Framework
+mlx>=0.31.2
+mlx-metal>=0.31.2
+
+# Custom C++ Extension Build Tools
+pybind11>=3.0.4
+
+# Mathematical Computation & Datasets
+numpy>=2.4.6
+torch>=2.12.0
+typing_extensions>=4.15.0
+
+# Image & PLY File I/O
+opencv-python>=4.13.0
+Pillow>=12.2.0
+imageio>=2.37.3
+plyfile>=1.1.4
+
+# Utilities
+tqdm>=4.67.3
